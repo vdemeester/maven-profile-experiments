@@ -13,6 +13,24 @@
 
   </properties>
 
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>com.github.vdemeester</groupId>
+        <artifactId>activate-profile-plugin</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+        <executions>
+          <execution>
+            <phase>validate</phase>
+            <goals>
+              <goal>activate-profile</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
   <profiles>
     <profile>
       <id>childActivation</id>
